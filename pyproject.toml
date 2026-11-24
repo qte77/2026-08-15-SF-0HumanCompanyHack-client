@@ -1,6 +1,7 @@
 [project]
 name = "client"
 version = "0.1.0"
+license = "Apache-2.0"
 description = "Untrusted counterparty to Broker: places orders, evaluates deliverables, pays"
 requires-python = ">=3.12"
 dependencies = ["pydantic>=2.9"]
