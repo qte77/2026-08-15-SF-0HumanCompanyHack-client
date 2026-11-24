@@ -58,10 +58,12 @@ jobs:
         if: inputs.mode == 'fixed'
         env:
           CLIENT_STRIPE_KEY: ${{ secrets.CLIENT_STRIPE_KEY }}
+          AMOUNT_USD: ${{ inputs.amount_usd }}
+          ORDER_ID: ${{ inputs.order_id }}
         run: |
           uv run client \
-            --pay "${{ inputs.amount_usd }}" \
-            --order-id "${{ inputs.order_id }}"
+            --pay "$AMOUNT_USD" \
+            --order-id "$ORDER_ID"
 
       # The client's page renders what the agent emitted, so a settlement that
       # is not committed is a settlement the page cannot report.
