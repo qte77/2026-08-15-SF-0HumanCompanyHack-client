@@ -200,3 +200,7 @@ next edit is made in both.
 The adversarial lane sends attacks over the real wire but nothing asserts what
 Broker did with them — the evidence is the issue thread, read by a human. An
 attack lane that checked the reply would be strictly better.
+
+## License
+
+[Apache-2.0](LICENSE).
